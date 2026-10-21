@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vladguran.github.io/dev-cheatsheets/sitemap.xml
