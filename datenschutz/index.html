@@ -1,0 +1,160 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datenschutzerklärung · Dev Cheatsheets</title><meta name="description" content="Datenschutzerklärung">
+<link rel="canonical" href="https://vladguran.github.io/dev-cheatsheets/datenschutz/"><meta property="og:title" content="Datenschutzerklärung · Dev Cheatsheets">
+<meta property="og:description" content="Datenschutzerklärung"><meta property="og:url" content="https://vladguran.github.io/dev-cheatsheets/datenschutz/">
+<meta property="og:type" content="website"><meta name="google-site-verification" content="WF5zXCS6Jv4AIlRBGj2Ry_lOQGJFQmV-TuCtaBrz2WI"><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;0fb7351dc48a491a9270701c00d28abd&quot;}"></script><meta name="robots" content="noindex"><style>
+:root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--fg:#c9d1d9;--muted:#8b949e;--blue:#58a6ff;--green:#7ee787;--accent:#ff90e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,Segoe UI,Inter,sans-serif}
+a{color:var(--blue)}main,header,footer{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding-top:28px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header a.brand{font:700 18px 'JetBrains Mono',monospace;color:var(--green);text-decoration:none}
+h1{font:700 clamp(26px,4vw,38px)/1.2 'JetBrains Mono',monospace;color:var(--blue);margin:28px 0 8px}
+h2{font:700 18px 'JetBrains Mono',monospace;color:var(--green);text-transform:uppercase;letter-spacing:.04em;margin:32px 0 10px}
+h3{color:#d2a8ff;font-size:16px;margin:20px 0 6px}
+.lead{color:var(--muted);font-size:18px;margin:0 0 20px}
+.hero{display:grid;grid-template-columns:1fr 280px;gap:28px;align-items:start}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.cover{width:100%;border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 30px #0008}
+.buy{display:inline-block;background:var(--accent);color:#000;font-weight:700;padding:14px 22px;border-radius:8px;text-decoration:none;font-size:17px}
+.buy:hover{filter:brightness(1.1)}.note{color:var(--muted);font-size:14px;margin:8px 0 0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:18px 0}
+code{font-family:'JetBrains Mono',monospace;font-size:.9em;background:#1f2630;color:#ffa657;padding:1px 5px;border-radius:4px}
+pre{background:var(--panel);border:1px solid var(--line);border-left:3px solid #1f6feb;border-radius:8px;padding:12px 14px;overflow-x:auto}
+pre code{background:none;color:var(--fg);padding:0}.codehilite{background:none!important}
+table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}
+th{text-align:left;color:var(--green);border-bottom:1px solid var(--line);padding:6px 8px}td{border-bottom:1px solid #21262d;padding:6px 8px;vertical-align:top}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--fg);display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:210/140;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+.card div{padding:12px 14px}.card strong{color:var(--blue);display:block;margin-bottom:4px}
+.fade{position:relative}.fade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:80px;background:linear-gradient(transparent,var(--bg))}
+footer{color:var(--muted);font-size:13px;padding:40px 20px}
+pre { line-height: 125%; }
+td.linenos .normal { color: #6e7681; background-color: #0d1117; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #6e7681; background-color: #0d1117; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #e6edf3; background-color: #6e7681; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #e6edf3; background-color: #6e7681; padding-left: 5px; padding-right: 5px; }
+.codehilite .hll { background-color: #6e7681 }
+.codehilite { background: #0d1117; color: #E6EDF3 }
+.codehilite .c { color: #8B949E; font-style: italic } /* Comment */
+.codehilite .err { color: #F85149 } /* Error */
+.codehilite .esc { color: #E6EDF3 } /* Escape */
+.codehilite .g { color: #E6EDF3 } /* Generic */
+.codehilite .k { color: #FF7B72 } /* Keyword */
+.codehilite .l { color: #A5D6FF } /* Literal */
+.codehilite .n { color: #E6EDF3 } /* Name */
+.codehilite .o { color: #FF7B72; font-weight: bold } /* Operator */
+.codehilite .x { color: #E6EDF3 } /* Other */
+.codehilite .p { color: #E6EDF3 } /* Punctuation */
+.codehilite .ch { color: #8B949E; font-style: italic } /* Comment.Hashbang */
+.codehilite .cm { color: #8B949E; font-style: italic } /* Comment.Multiline */
+.codehilite .cp { color: #8B949E; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.codehilite .cpf { color: #8B949E; font-style: italic } /* Comment.PreprocFile */
+.codehilite .c1 { color: #8B949E; font-style: italic } /* Comment.Single */
+.codehilite .cs { color: #8B949E; font-weight: bold; font-style: italic } /* Comment.Special */
+.codehilite .gd { color: #FFA198; background-color: #490202 } /* Generic.Deleted */
+.codehilite .ge { color: #E6EDF3; font-style: italic } /* Generic.Emph */
+.codehilite .ges { color: #E6EDF3; font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.codehilite .gr { color: #FFA198 } /* Generic.Error */
+.codehilite .gh { color: #79C0FF; font-weight: bold } /* Generic.Heading */
+.codehilite .gi { color: #56D364; background-color: #0F5323 } /* Generic.Inserted */
+.codehilite .go { color: #8B949E } /* Generic.Output */
+.codehilite .gp { color: #8B949E } /* Generic.Prompt */
+.codehilite .gs { color: #E6EDF3; font-weight: bold } /* Generic.Strong */
+.codehilite .gu { color: #79C0FF } /* Generic.Subheading */
+.codehilite .gt { color: #FF7B72 } /* Generic.Traceback */
+.codehilite .g-Underline { color: #E6EDF3; text-decoration: underline } /* Generic.Underline */
+.codehilite .kc { color: #79C0FF } /* Keyword.Constant */
+.codehilite .kd { color: #FF7B72 } /* Keyword.Declaration */
+.codehilite .kn { color: #FF7B72 } /* Keyword.Namespace */
+.codehilite .kp { color: #79C0FF } /* Keyword.Pseudo */
+.codehilite .kr { color: #FF7B72 } /* Keyword.Reserved */
+.codehilite .kt { color: #FF7B72 } /* Keyword.Type */
+.codehilite .ld { color: #79C0FF } /* Literal.Date */
+.codehilite .m { color: #A5D6FF } /* Literal.Number */
+.codehilite .s { color: #A5D6FF } /* Literal.String */
+.codehilite .na { color: #E6EDF3 } /* Name.Attribute */
+.codehilite .nb { color: #E6EDF3 } /* Name.Builtin */
+.codehilite .nc { color: #F0883E; font-weight: bold } /* Name.Class */
+.codehilite .no { color: #79C0FF; font-weight: bold } /* Name.Constant */
+.codehilite .nd { color: #D2A8FF; font-weight: bold } /* Name.Decorator */
+.codehilite .ni { color: #FFA657 } /* Name.Entity */
+.codehilite .ne { color: #F0883E; font-weight: bold } /* Name.Exception */
+.codehilite .nf { color: #D2A8FF; font-weight: bold } /* Name.Function */
+.codehilite .nl { color: #79C0FF; font-weight: bold } /* Name.Label */
+.codehilite .nn { color: #FF7B72 } /* Name.Namespace */
+.codehilite .nx { color: #E6EDF3 } /* Name.Other */
+.codehilite .py { color: #79C0FF } /* Name.Property */
+.codehilite .nt { color: #7EE787 } /* Name.Tag */
+.codehilite .nv { color: #79C0FF } /* Name.Variable */
+.codehilite .ow { color: #FF7B72; font-weight: bold } /* Operator.Word */
+.codehilite .pm { color: #E6EDF3 } /* Punctuation.Marker */
+.codehilite .w { color: #6E7681 } /* Text.Whitespace */
+.codehilite .mb { color: #A5D6FF } /* Literal.Number.Bin */
+.codehilite .mf { color: #A5D6FF } /* Literal.Number.Float */
+.codehilite .mh { color: #A5D6FF } /* Literal.Number.Hex */
+.codehilite .mi { color: #A5D6FF } /* Literal.Number.Integer */
+.codehilite .mo { color: #A5D6FF } /* Literal.Number.Oct */
+.codehilite .sa { color: #79C0FF } /* Literal.String.Affix */
+.codehilite .sb { color: #A5D6FF } /* Literal.String.Backtick */
+.codehilite .sc { color: #A5D6FF } /* Literal.String.Char */
+.codehilite .dl { color: #79C0FF } /* Literal.String.Delimiter */
+.codehilite .sd { color: #A5D6FF } /* Literal.String.Doc */
+.codehilite .s2 { color: #A5D6FF } /* Literal.String.Double */
+.codehilite .se { color: #79C0FF } /* Literal.String.Escape */
+.codehilite .sh { color: #79C0FF } /* Literal.String.Heredoc */
+.codehilite .si { color: #A5D6FF } /* Literal.String.Interpol */
+.codehilite .sx { color: #A5D6FF } /* Literal.String.Other */
+.codehilite .sr { color: #79C0FF } /* Literal.String.Regex */
+.codehilite .s1 { color: #A5D6FF } /* Literal.String.Single */
+.codehilite .ss { color: #A5D6FF } /* Literal.String.Symbol */
+.codehilite .bp { color: #E6EDF3 } /* Name.Builtin.Pseudo */
+.codehilite .fm { color: #D2A8FF; font-weight: bold } /* Name.Function.Magic */
+.codehilite .vc { color: #79C0FF } /* Name.Variable.Class */
+.codehilite .vg { color: #79C0FF } /* Name.Variable.Global */
+.codehilite .vi { color: #79C0FF } /* Name.Variable.Instance */
+.codehilite .vm { color: #79C0FF } /* Name.Variable.Magic */
+.codehilite .il { color: #A5D6FF } /* Literal.Number.Integer.Long */</style></head><body>
+<header><a class="brand" href="https://vladguran.github.io/dev-cheatsheets/">&gt;_ Dev Cheatsheets</a>
+<span class="note">Dense, copy-paste-ready PDF references for working engineers</span></header>
+<main><h1>Datenschutzerklärung</h1>
+<p class="lead">Informationen zur Verarbeitung personenbezogener Daten gemäß Art. 13 DSGVO.</p>
+<h2>1. Verantwortlicher</h2>
+<p>Adrian-Lucian Guran, Stadlerstraße 1a, 4020 Linz, Österreich<br>E-Mail: <a href="mailto:vguran3@outlook.de">vguran3@outlook.de</a></p>
+<h2>2. Hosting durch GitHub Pages</h2>
+<p>Diese Website wird bei GitHub Pages der GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA
+gehostet. Beim Aufruf verarbeitet GitHub technisch notwendige Daten (insbesondere IP-Adresse, Zeitpunkt, aufgerufene
+Seite, Browser) in Server-Logfiles, um die Website auszuliefern und die Sicherheit zu gewährleisten. Rechtsgrundlage ist
+Art. 6 Abs. 1 lit. f DSGVO. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Mehr:
+<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+<h2>3. Cookies</h2>
+<p>Diese Website selbst setzt keine Cookies und lädt keine Schriftarten oder Skripte von Drittanbietern, außer dem
+unten genannten Analysedienst (falls aktiv).</p>
+<h2>4. Reichweitenmessung mit Cloudflare Web Analytics</h2>
+<p>Zur statistischen Auswertung der Besuche nutzen wir Cloudflare Web Analytics der Cloudflare, Inc., 101 Townsend St,
+San Francisco, CA 94107, USA. Der Dienst setzt <strong>keine Cookies</strong> und erstellt keine Nutzerprofile. Dabei
+werden technische Daten wie aufgerufene Seite, Referrer, Browsertyp, Gerätetyp und Land verarbeitet; IP-Adressen werden
+nach Angaben von Cloudflare nicht zur Identifizierung gespeichert. Rechtsgrundlage ist unser berechtigtes Interesse an
+der Verbesserung des Angebots (Art. 6 Abs. 1 lit. f DSGVO). Cloudflare ist unter dem EU-US Data Privacy Framework
+zertifiziert (Art. 45 DSGVO). Mehr: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>.</p>
+<h2>5. Kauf und Download über Gumroad</h2>
+<p>Kauf-Buttons führen zu Gumroad, Inc. (San Francisco, USA). Gumroad wickelt Bestellung, Zahlung, Umsatzsteuer und
+Auslieferung als Händler ab und verarbeitet dabei insbesondere Name, E-Mail-Adresse und Zahlungsdaten in eigener
+Verantwortung. Wir erhalten von Gumroad zu jeder Bestellung Name, E-Mail-Adresse, gekauftes Produkt und Betrag, um
+die Bestellung zuordnen und Kundenanfragen beantworten zu können (Art. 6 Abs. 1 lit. b DSGVO). Mehr:
+<a href="https://gumroad.com/privacy">gumroad.com/privacy</a>.</p>
+<h2>6. Externe Links und soziale Netzwerke</h2>
+<p>Links zu Bluesky, Dev.to oder GitHub sind einfache Hyperlinks. Daten werden erst übertragen, wenn Sie einen Link
+anklicken; dann gilt die Datenschutzerklärung des jeweiligen Anbieters.</p>
+<h2>7. Ihre Rechte</h2>
+<p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und
+Widerspruch (Art. 15–21 DSGVO). Wenden Sie sich dazu an die oben genannte E-Mail-Adresse. Sie haben außerdem das Recht
+auf Beschwerde bei der österreichischen Datenschutzbehörde, Barichgasse 40–42, 1030 Wien,
+<a href="https://www.dsb.gv.at">dsb.gv.at</a>.</p>
+<p class="note">Stand: Oktober 2026. Privacy policy in short (English): no cookies; hosting by GitHub Pages;
+cookieless Cloudflare Web Analytics if enabled; purchases are processed by Gumroad as merchant of record; contact
+vguran3@outlook.de to exercise your GDPR rights.</p></main>
+<footer>Content is written with AI assistance. Prices in USD, pay what you want. Payments and delivery by Gumroad.
+<br><a href="https://vladguran.github.io/dev-cheatsheets/impressum/">Impressum</a> · <a href="https://vladguran.github.io/dev-cheatsheets/datenschutz/">Datenschutz / Privacy</a></footer>
+</body></html>
